@@ -14,7 +14,7 @@ graph = {
 
 Untuk mencapai tujuan yaitu dari titik awal A menuju ke F, dapat menggunakan 2 metode pencarian, yaitu bfs dan dfs dengan penjelasan seperti berikut :
 
-!(https://github.com/DyningAida/Sistem_Pakar/commit/1074d68dd455437dedc3dfa0a22734ce8e3b064b)
+![DFS_BFS](https://github.com/DyningAida/Sistem_Pakar/blob/master/2_Breadth_Depth_First_Search/bfsdfs.png)
 
 Pada skema bfs, urutan yang didapatkan ialah ABCF. Pada bfs, metode yang digunakan ialah seperti antrian. Sehingga bersifat First In, First Out, yang berarti mendahulukan berdasar siapa yang terdahulu pada antrian grafik. Proses pencarian dilakukan secara menyeluruh dan berurutan. Sehingga pada metode ini, jalur yang dikunjungi juga lebih panjang, yakni melalui A - B - C - D- E - F
 
