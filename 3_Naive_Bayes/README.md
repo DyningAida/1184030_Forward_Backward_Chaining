@@ -1,6 +1,6 @@
 Dataset yang digunakan kali ini ialah dataset car.csv, yang didalamnya terdapat 6 atribut dan 1 label.
-atribut : buyingprc, maintprc, doors, persons, lug_boot, safety
-label : recommend
+- atribut : buyingprc, maintprc, doors, persons, lug_boot, safety
+- label : recommend
 dataset ini digunakan untuk menghitung probabilitas suatu mobil, apakah recommend ataukah tidak untuk digunakan dengan menggunakan algoritma naive bayes,
 output yang dihasilkan pada klasifikasi ini ialah berupa parameter 0(acc), 1(good), 2(unacc), 3(vgood).
 algoritma naive bayes pada dataset ini diterapkan dengan 2 cara, yakni dengan menggunakan scikit-learn python pada file main.py, 
