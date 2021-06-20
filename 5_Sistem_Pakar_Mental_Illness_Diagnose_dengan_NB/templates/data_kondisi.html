@@ -1,0 +1,143 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>{% block title %}Data Kondisi{% endblock %}</h1>
+</head>
+<body>
+    {% block content %}
+    <p align="center" size="12pt">Silakan cek data kondisi yang Anda masukkan</p>
+    <form action="/save_profile" method="POST">
+        <table align="center">
+            <tr align="left">
+                <td>Anxiety</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>Mengalami depresi</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>Merasa obbessive</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>Sering mengalami perubahan mood secara tiba-tiba</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>Memiliki gangguan kecemasan</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>Merasa menjadi orang yang compulsive</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>Mudah lelah</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>Susah berkonsentrasi</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr align="left">
+                <td>BErsekolah/kuliah sambil bekerja</td>
+                <td>:</td>
+                {% if data[0] == 1 %}
+                <td>
+                   Ya
+                </td>
+                {% else %}
+                <td>
+                    Tidak
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-secondary" value="submit">
+                        Submit
+                    </button> 
+                </td>
+            </form>
+                <td> </td>
+            <form action="/form_kondisi" method="post">  
+                <td>          
+                    <button type="submit" class="btn btn-secondary" value="back">
+                        Ulang
+                    </button>
+                </td>
+            </form>
+            </tr>
+        </table>
+    
+    {% endblock %}
+</body>
+</html>
