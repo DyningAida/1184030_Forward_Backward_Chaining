@@ -5,7 +5,7 @@ Created on Sat Jun 26 16:15:29 2021
 @author: DyningAida
 """
 
-import pandas as pd, numpy as np, seaborn as sns, matplotlib.pyplot as plt
+import pandas as pd
 #import seaborn as sns, matplotlib.pyplot as plt, numpy as np
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -37,19 +37,19 @@ nb_train = nb.fit(x_train, y_train)
 # Menentukan hasil prediksi dari x_test
 y_pred = nb_train.predict(x_test)
 y_pred
-np.array(y_test)
+#np.array(y_test)
 # Menentukan probabilitas hasil prediksi
 nb_train.predict_proba(x_test)
 #membuat confusion matrix
-confusion_matrix(y_test, y_pred)
-def display_conf(y_test, y_pred):
-    sns.heatmap(confusion_matrix(y_test, y_pred),annot=True,linewidths=3,cbar=False)
-    plt.title('Confusion Matrix')
-    plt.ylabel('Actual')
-    plt.xlabel('Prediction')
-    plt.show()
+#confusion_matrix(y_test, y_pred)
+#def display_conf(y_test, y_pred):
+#    sns.heatmap(confusion_matrix(y_test, y_pred),annot=True,linewidths=3,cbar=False)
+#    plt.title('Confusion Matrix')
+#    plt.ylabel('Actual')
+#    plt.xlabel('Prediction')
+#    plt.show()
 # Memanggil fungsi untuk menampilkan visualisasi confusion matrix
-display_conf(y_test, y_pred)
-f1_score(y_test, y_pred, labels=np.unique(y_pred), average='weighted')
+#display_conf(y_test, y_pred)
+#f1_score(y_test, y_pred, labels=np.unique(y_pred), average='weighted')
 #print classification report
 print(classification_report(y_test, y_pred))

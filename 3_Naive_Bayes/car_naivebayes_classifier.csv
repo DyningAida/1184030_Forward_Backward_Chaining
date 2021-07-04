@@ -1,5 +1,5 @@
-buyingprice,maintprice,doors,persons,lug_boot,safety,recommend,,frekuensi,,,,,,,,,,,,,,,,,,,,,,
-vhigh,vhigh,2,2,small,low,unacc,,,,,,,,,,,,,,,,,,,,,,,,
+buyingprice,maintprice,doors,persons,lug_boot,safety,recommend,,,,,,,,,,,,,,,,,,,,,,,,
+vhigh,vhigh,2,2,small,low,unacc,,frekuensi,,,,,,,,,,,,,,,,,,,,,,
 vhigh,vhigh,2,2,small,med,unacc,,recommend,buypr_vhigh,buypr_high,buypr_med,buypr_low,maintpr_vhigh,maintpr_high,maintpr_med,maintpr_low,doors_2,doors_3,doors_4,doors_5more,persons_2,persons_4,persons_more,lgboot_sm,lgboot_med,lgboot_big,safety_low,safety_med,safety_high,total
 vhigh,vhigh,2,2,small,high,unacc,,unacc,360,324,268,258,360,314,268,268,326,300,292,292,576,312,322,450,392,368,576,357,277,1210
 vhigh,vhigh,2,2,med,low,unacc,,acc,72,108,115,89,72,105,115,92,81,99,102,102,0,198,186,105,135,144,0,180,204,384
@@ -38,9 +38,9 @@ vhigh,vhigh,3,2,big,high,unacc,,,,,,,,,,,,,,,,,,,,,,,,
 vhigh,vhigh,3,4,small,low,unacc,,"prediksi jika (buypr_low maintpr_med, doors_4, persons_more, lgboot_med, safety_med), masuk kategori apakah mobil tersebut untuk dibeli oleh user?",,,,,,,,,,,,,,,,,,,,,,
 vhigh,vhigh,3,4,small,med,unacc,,,,,,,,,,,,,,,,,,,,,,,,
 vhigh,vhigh,3,4,small,high,unacc,,unacc,,,,acc,,,,good,,,,vgood,,,,,,,,,,
-vhigh,vhigh,3,4,med,low,unacc,,total likelihood ,,0.064911256,,total lilelihood,,0.000336651,,total lilelihood,,4.19682E-08,,total lilelihood,,0,,,,,,,,
+vhigh,vhigh,3,4,med,low,unacc,,total likelihood ,,0.064911256,,total lilelihood,,0.000336651,,total lilelihood,,4.20E-08,,total lilelihood,,0,,,,,,,,
 vhigh,vhigh,3,4,med,med,unacc,,total evidence,,0.00052646,,total evidence,,0.00052646,,total evidence,,0.00052646,,total evidence,,0.00052646,,,,,,,,
-vhigh,vhigh,3,4,med,high,unacc,,predict,,86.33692542,,,,0.142102645,,,,3.18318E-06,,,,0,,,,,,,,
+vhigh,vhigh,3,4,med,high,unacc,,predict,,86.33692542,,,,0.142102645,,,,3.18E-06,,,,0,,,,,,,,
 vhigh,vhigh,3,4,big,low,unacc,,,,,,,,,,,,,,,,,,,,,,,,
 vhigh,vhigh,3,4,big,med,unacc,,"jadi, mobil tersebut masuk ke kategori unacc",,,,,,,,,,,,,,,,,,,,,,
 vhigh,vhigh,3,4,big,high,unacc,,,,,,,,,,,,,,,,,,,,,,,,

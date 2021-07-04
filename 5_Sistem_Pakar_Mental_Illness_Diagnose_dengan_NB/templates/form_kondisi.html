@@ -15,12 +15,83 @@
     {% block content %}
     <div class="jumbotron jumbotron-fluid w-100">
         <div class="formnya">
-            <form action="/" method="post" align="center" >
+            <form action="/data_kondisi" method="post" align="center" >
             <div class="row">
                 <div class="container-sm text-center">
                 <table align="center">
                     <tr align="left">
-                        <td>Anxiety</td>
+                        <td>Tinggal dengan orang tua</td>
+                        <td>:</td>
+                        <td>
+                            <select name="tinggal_dengan_ortu" class="form-control-sm" id="tinggal_dengan_ortu" selected>
+                                <option value="" disabled selected hidden>Select your choice</option>
+                                <option value="1">Ya</option>
+                                <option value="0">Tidak</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>Pernah gapyear sebelum melanjutkan pendidikan</td>
+                        <td>:</td>
+                        <td>
+                            <select name="pernah_gapyear" class="form-control-sm" id="pernah_gapyear" selected>
+                                <option value="" disabled selected hidden>Select your choice</option>
+                                <option value="1">Pernah</option>
+                                <option value="0">Tidak pernah</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>Lama gapyear</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="lama_gapyear" label="isi dengan angka">
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>Pernah dirawat karena mental illness?</td>
+                        <td>:</td>
+                        <td>
+                            <select name="pernah_dirawat" class="form-control-sm" id="pernah_dirawat" selected>
+                                <option value="" disabled selected hidden>Select your choice</option>
+                                <option value="1">Pernah</option>
+                                <option value="0">Tidak pernah</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>Berapa kali anda dirawat karena mental illness?</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" id="banyak_dirawat" name="banyak_dirawat" label="isi dengan angka">
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>Apakah Anda seorang disabled</td>
+                        <td>:</td>
+                        <td>
+                            <select name="disable" class="form-control-sm" id="disable" selected>
+                                <option value="" disabled selected hidden>Select your choice</option>
+                                <option value="1">Ya</option>
+                                <option value="0">Tidak</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>Usia</td>
+                        <td>:</td>
+                        <td>
+                            <select name="usia" class="form-control-sm" id="usia" selected>
+                                <option value="" disabled selected hidden>Select your choice</option>
+                                <option value="0">18-29</option>
+                                <option value="1">30-44</option>
+                                <option value="2">45-60</option>
+                                <option value="3">>60</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td>Apakah Anda mengalami anxiety?</td>
                         <td>:</td>
                         <td>
                             <select name="anxiety" class="form-control-sm" id="anxiety" selected>
@@ -67,7 +138,7 @@
                         <td>Memiliki gangguan kecemasan</td>
                         <td>:</td>
                         <td>
-                            <select name="kecemasan" class="form-control-sm" id="kecemasan" selected>
+                            <select name="gangguan_kecemasan" class="form-control-sm" id="gangguan_kecemasan" selected>
                                 <option value="" disabled selected hidden>Select your choice</option>
                                 <option value="1">Ya</option>
                                 <option value="0">Tidak</option>
@@ -89,7 +160,7 @@
                         <td>Mudah lelah</td>
                         <td>:</td>
                         <td>
-                            <select class="form-control-sm" name="kelelahan" id="kelelahan" selected>
+                            <select class="form-control-sm" name="mudah_lelah" id="mudah_lelah" selected>
                                 <option value="" disabled selected hidden>Select your choice</option>
                                 <option value="0">Ya</option>
                                 <option value="1">Tidak</option>
@@ -100,21 +171,10 @@
                         <td>Susah berkonsentrasi</td>
                         <td>:</td>
                         <td>
-                            <select class="form-control-sm" name="konsentrasi" id="konsentrasi" selected>
+                            <select class="form-control-sm" name="susah_konsentrasi" id="susah_konsentrasi" selected>
                                 <option value="" disabled selected hidden>Select your choice</option>
                                 <option value="0">Ya</option>
                                 <option value="1">Tidak</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr align="left">
-                        <td>Bersekolah/kuliah sambil bekerja</td>
-                        <td>:</td>
-                        <td>
-                            <select name="sekolahkerja" class="form-control-sm" id="sekolahkerja" selected>
-                                <option value="" disabled selected hidden>Select your choice</option>
-                                <option value="1">Ya</option>
-                                <option value="0">Tidak</option>
                             </select>
                         </td>
                     </tr>

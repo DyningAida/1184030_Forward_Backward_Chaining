@@ -1,0 +1,98 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>{% block title %}Profile{% endblock %}</h1>
+</head>
+<body>
+    {% block content %}
+    <p align="center" size="12pt">Silakan cek data diri anda</p>
+    <form action="/save_profile" method="POST">
+        <table align="center">
+            <tr align="left">
+                <td>Usia</td>
+                <td>:</td>
+                <td>
+                   {{ data[0] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Gender</td>
+                <td>:</td>
+                <td>
+                    {{ data[1] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Memiliki Komputer</td>
+                <td>:</td>
+                <td>
+                    {{ data[2] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Memiliki akses internet</td>
+                <td>:</td>
+                <td>
+                    {{ data[3] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Tinggal dengan orang tua</td>
+                <td>:</td>
+                <td>
+                    {{ data[4] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Pernah gap year</td>
+                <td>:</td>
+                <td>
+                    {{ data[5] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Bekerja dan Sekolah</td>
+                <td>:</td>
+                <td>
+                    {{ data[6] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Menerima bantuan sosial</td>
+                <td>:</td>
+                <td>
+                    {{ data[7] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Tinggal di rumah subsidi</td>
+                <td>:</td>
+                <td>
+                    {{ data[8] }}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-secondary" value="submit">
+                        Submit
+                    </button> 
+                </td>
+            </form>
+                <td> </td>
+            <form action="/" method="post">  
+                <td>          
+                    <button type="submit" class="btn btn-secondary" value="back">
+                        Ulang
+                    </button>
+                </td>
+            </form>
+            </tr>
+        </table>
+    
+    {% endblock %}
+</body>
+</html>
