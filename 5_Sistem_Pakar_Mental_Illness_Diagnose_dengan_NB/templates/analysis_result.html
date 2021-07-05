@@ -13,9 +13,23 @@
         <table align="center">
             <tr>
                 <td>Hasil</td>
+                <td>:</td>
                 <td>{{ y_pred }}</td>
             </tr>
         </table>
+                {% if y_pred == 1 %}
+                    <p align='center'>Mohon maaf, sepertinya Anda perlu ke professional terdekat untuk konsultasikan masalah yang Anda miliki</p>
+                {% else %}
+                    <p align='center'>
+                        Selamat, kondisi mental health Anda dalam keadaan baik
+                    </p>
+                {% endif %}  
+        <form action="/" align='center'>           
+            <button type="submit" class="btn btn-secondary" value="back">
+                    Ke halaman Awal
+            </button>
+        </form>
+
     {% endblock %}
 </body>
 </html>

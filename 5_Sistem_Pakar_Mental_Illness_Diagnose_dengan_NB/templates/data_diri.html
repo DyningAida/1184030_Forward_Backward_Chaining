@@ -13,66 +13,45 @@
     <form action="/save_profile" method="POST">
         <table align="center">
             <tr align="left">
-                <td>Usia</td>
+                <td>Gender</td>
                 <td>:</td>
                 <td>
-                   {{ data[0] }}
+                   {{ data[5] }}
                 </td>
             </tr>
             <tr align="left">
-                <td>Gender</td>
+                <td>Memiliki komputer</td>
+                <td>:</td>
+                <td>
+                    {{ data[0] }}
+                </td>
+            </tr>
+            <tr align="left">
+                <td>Akses internet memadai</td>
                 <td>:</td>
                 <td>
                     {{ data[1] }}
                 </td>
             </tr>
             <tr align="left">
-                <td>Memiliki Komputer</td>
+                <td>Bekerja dan sekolah</td>
                 <td>:</td>
                 <td>
                     {{ data[2] }}
                 </td>
             </tr>
             <tr align="left">
-                <td>Memiliki akses internet</td>
+                <td>Menerima bantuan sosial</td>
                 <td>:</td>
                 <td>
                     {{ data[3] }}
                 </td>
             </tr>
             <tr align="left">
-                <td>Tinggal dengan orang tua</td>
+                <td>Tinggal di rumah subdisi</td>
                 <td>:</td>
                 <td>
                     {{ data[4] }}
-                </td>
-            </tr>
-            <tr align="left">
-                <td>Pernah gap year</td>
-                <td>:</td>
-                <td>
-                    {{ data[5] }}
-                </td>
-            </tr>
-            <tr align="left">
-                <td>Bekerja dan Sekolah</td>
-                <td>:</td>
-                <td>
-                    {{ data[6] }}
-                </td>
-            </tr>
-            <tr align="left">
-                <td>Menerima bantuan sosial</td>
-                <td>:</td>
-                <td>
-                    {{ data[7] }}
-                </td>
-            </tr>
-            <tr align="left">
-                <td>Tinggal di rumah subsidi</td>
-                <td>:</td>
-                <td>
-                    {{ data[8] }}
                 </td>
             </tr>
             <tr>
@@ -91,8 +70,7 @@
                 </td>
             </form>
             </tr>
-        </table>
-    
+        </table>  
     {% endblock %}
 </body>
 </html>
